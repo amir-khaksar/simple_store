@@ -4,8 +4,8 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { Button } from "@/Components/ui/button";
 import { Input } from "@/Components/ui/input";
-import { RegisterFormInputs, LoginFormInputs } from "../authType";
-import { useRegister, useLogin } from "../auth";
+import { RegisterFormInputs, LoginFormInputs } from "../Auth/types/authType"
+import { useRegister, useLogin } from "../Auth/auth";
 
 export default function AuthPage() {
    const [isLogin, setIsLogin] = useState(false);

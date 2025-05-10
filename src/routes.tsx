@@ -1,4 +1,4 @@
-import AuthPage from "./Pages/Auth/types/AuthPage";
+import AuthPage from "./Pages/Auth/AuthPage";
 import Index from "./Pages/Index/Index";
 
 
