@@ -1,7 +1,8 @@
 import { Container } from "@/Components/Container/Container";
-import Header from "@/Components/header/header";
+import Header from "@/Components/Header/header";
 import ProductCard from "@/Components/ProductCard/ProductCard";
 import { GProducts } from "./GProducts";
+import Footer from "@/Components/Footer/Footer";
 
 export default function Index() {
    const { data: products, isLoading, error } = GProducts();
@@ -26,6 +27,8 @@ export default function Index() {
                ))}
 
             </div>
+
+            <Footer />
          </Container>
       </>
    );
