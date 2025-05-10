@@ -1,35 +1,18 @@
 import { Container } from "@/Components/Container/Container";
 import Header from "@/Components/Header/header";
-import ProductCard from "@/Components/ProductCard/ProductCard";
-import { GProducts } from "./GProducts";
+import Products from "@/Components/Products/Products";
 import Footer from "@/Components/Footer/Footer";
 
 export default function Index() {
-   const { data: products, isLoading, error } = GProducts();
-
-   if (isLoading) return <p>Loading...</p>;
-   if (error) return <p>Something went wrong</p>;
-
    return (
-      <>
-         <Container>
-            <Header />
+      <Container>
+         <Header />
 
-            <h1 className="text-4xl font-bold mt-20">Our products</h1>
+         <h1 className={"text-4xl font-bold mt-20"}>Our products</h1>
 
-            <div
-               className={
-                  "flex items-center justify-center flex-wrap gap-8 mt-30"
-               }
-            >
-               {products.map((product: any) => (
-                  <ProductCard product={product} key={product.id} />
-               ))}
+         <Products />
 
-            </div>
-
-            <Footer />
-         </Container>
-      </>
+         <Footer />
+      </Container>
    );
 }
