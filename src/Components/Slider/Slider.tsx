@@ -26,7 +26,7 @@ const Slider = () => {
          "(max-width: 768px)": {
             slides: { perView: 2 },
          },
-         "(max-width: 480px)": {
+         "(max-width: 600px)": {
             slides: { perView: 1 },
          },
       },
