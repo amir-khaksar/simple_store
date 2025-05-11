@@ -8,7 +8,7 @@ export default function Index() {
       <Container>
          <Header />
 
-         <h1 className={"text-4xl font-bold mt-20"}>Our products</h1>
+         <h1 className={"text-4xl font-bold mt-20"}>محصولات ما</h1>
 
          <Products />
 

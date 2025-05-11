@@ -18,16 +18,18 @@ export interface ProductProps {
 
 export default function ProductCard({ product }: ProductProps) {
    return (
-      <Card className="w-96 shadow-md rounded-2xl overflow-hidden">
+      <Card className="w-80 shadow-md rounded-2xl overflow-hidden">
          <CardHeader className="p-0">
             <img
                src={product.image}
                alt={product.title}
-               className="w-full h-48 object-cover"
+               className="w-full h-40 object-cover"
             />
          </CardHeader>
          <CardContent className="p-4">
-            <h3 className="text-lg font-semibold mb-1 line-clamp-1">{product.title}</h3>
+            <h3 className="text-lg font-semibold mb-1 line-clamp-1">
+               {product.title}
+            </h3>
             <p className="text-sm text-muted-foreground mb-2 line-clamp-3">
                {product.description}
             </p>
@@ -35,8 +37,8 @@ export default function ProductCard({ product }: ProductProps) {
                ${product.price}
             </p>
          </CardContent>
-         <CardFooter className="p-4 pt-0">
-            <Button className="w-full py-6">Add to Cart</Button>
+         <CardFooter className="py-0">
+            <Button className="w-full py-6">اضافه کردن به سبد خرید</Button>
          </CardFooter>
       </Card>
    );
