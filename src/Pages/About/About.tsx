@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/Components/ui/card";
 export default function About() {
    return (
       <Container>
-        <Header />
+         <Header />
          <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4">درباره ما</h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
